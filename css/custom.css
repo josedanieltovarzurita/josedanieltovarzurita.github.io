@@ -40,14 +40,53 @@ nav.shrink .navbar-toggle {
 	color: #f96666;
 }
 
-#typed-strings {
-	display: none;
+.type > p {
+	padding-bottom: 5px;
 }
 
-#type {
-	margin-top: 100px;
+.type > p:first-child {
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	animation: type 3s steps(70, end);
 }
 
-.typed-cursor {
-	display: none;
+.type > p:nth-child(2) {
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	animation: type2 4s steps(70, end);
 }
+
+.type > p:last-child {
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	animation: type3 5.5s steps(70, end);
+}
+
+.typing {
+	animation: blink 1s infinite;
+}
+
+@keyframes blink {
+	to {opacity: .0;}
+}
+
+@keyframes type{ 
+  0%{width:0;}
+  100%{width:100;}
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes type3{
+  0%{width: 0;}
+  50%{width: 0;}
+  75%{width: 0;}
+  100%{ width: 100; } 
+} 

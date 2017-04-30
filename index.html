@@ -21,15 +21,6 @@
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="favicon.png">
-    <script src="js/typed.js"></script>
-    <script>
-      document.addEventListener('DOMContentLoaded', function(){
-          Typed.new('#type', {
-            stringsElement: document.getElementById('typed-strings'),
-            typeSpeed: 10
-          });
-      });
-    </script>
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -51,9 +42,9 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#home">Home</a></li>
-<!--             <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#gallery">Gallery</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li> -->
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -63,13 +54,11 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-lg-12">
-            <div id="typed-strings">
-                <p>Hi! I'm <span class="text-primary">José Tovar</span></p>
-                <p>I'm a web & graphic <span class="text-primary">designer</span>...</p>
-                <p>And I like <span class="love">you</span>.</p>
-            </div>
-
-            <h1 class="text-center" id="type"></h1>
+            <h1 class="type">
+              <p>Hi! I'm <strong class="text-primary">José Tovar</strong></p>
+              <p>I'm a web & graphic <strong class="text-primary">designer</strong>...</p>
+              <p>And I like <strong class="love">you</strong>.<span class="typing">|</span></p>
+            </h1>
           </div>
         </div>
       </div>
