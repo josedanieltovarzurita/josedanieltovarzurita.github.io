@@ -218,7 +218,7 @@ INTRO
 */
 @media (min-width: 1200px) {
   .text-intro h1 {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 /*
@@ -723,7 +723,7 @@ STYLE SWITCHER FOR DEMO
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #2074b1;
+  color: #ffffff;
   background-color: transparent;
 }
 .navbar-default .navbar-nav > .disabled > a,

@@ -23,7 +23,7 @@ nav.navbar.shrink {
 
 nav.shrink a {
   padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-bottom: 20px !important;
   font-size: 15px;
 }
 
@@ -38,6 +38,15 @@ nav.shrink .navbar-toggle {
 
 .love {
 	color: #f96666;
+}
+
+h2.heading {
+	font-size: 35px;
+}
+
+section#intro {
+	padding-bottom: 170px;
+	background: #f7f4f4;
 }
 
 .type > p {
@@ -58,15 +67,26 @@ nav.shrink .navbar-toggle {
 	animation: type2 4s steps(70, end);
 }
 
-.type > p:last-child {
+.type > p:nth-child(3) {
 	white-space: nowrap;
 	overflow: hidden;
 	width: 100%;
 	animation: type3 5.5s steps(70, end);
 }
 
+.type > p:last-child {
+	white-space: nowrap;
+	overflow: hidden;
+	width: 100%;
+	animation: type4 6.5s steps(70, end);
+}
+
 .typing {
 	animation: blink 1s infinite;
+}
+
+.optional {
+	display: none;
 }
 
 @keyframes blink {
@@ -90,3 +110,69 @@ nav.shrink .navbar-toggle {
   75%{width: 0;}
   100%{ width: 100; } 
 } 
+
+@keyframes type4{
+  0%{width: 0;}
+  50%{width: 0;}
+  75%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+nav .navbar-nav > li.active {
+	background: #4eb9fc;
+}
+
+nav .navbar-nav > li > a:hover {
+	color: #ffffff !important;
+	background: #59bcf9 !important;
+}
+
+
+
+
+/* Large desktop */
+@media (min-width: 1200px) { 
+	.intro-container {
+		width: 100%;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.intro-container {
+		width: 100%;
+	}
+
+	.text-intro h1 {
+		font-size: 40px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 830px) { 
+	.intro-container {
+		width: 100%;
+	}
+
+	.text-intro h1 {
+		font-size: 30px;
+	}
+}
+
+/* break */
+@media (max-width: 630px) { 
+	.optional {
+		display: inline;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	.intro-container {
+		width: 100%;
+	}
+
+	.text-intro h1 {
+		font-size: 25px;
+	}
+}
