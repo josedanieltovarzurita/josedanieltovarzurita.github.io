@@ -60,7 +60,9 @@ $("#sendMessage").on("click", function() {
     $.ajax({
         url: "https://formspree.io/josedanieltovarzurita@gmail.com", 
         method: "POST",
-        data: {message: "¡Listo! Ha sido enviado, te contactaré en segundos"},
-        dataType: "json"
+        dataType: "json",
+        success: function() {
+        	alert("¡Listo! Ha sido enviado, te contactaré en segundos");
+        }
     });
 });
