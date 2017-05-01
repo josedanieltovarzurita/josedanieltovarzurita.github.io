@@ -118,6 +118,24 @@ section#intro {
   100%{ width: 100; } 
 } 
 
+@keyframes zoom {
+	0% {transform: scale(1);}
+	100% {transform: scale(1.5);}
+}
+
+@keyframes clock {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
+
+@keyframes move {
+	0% {transform: translate(0, 0);}
+	25% {transform: translate(0, 10px);}
+	50% {transform: translate(10px, 10px);}
+	75% {transform: rotate(-45deg);}
+	100% {transform: rotateZ(35deg);}
+}
+
 nav .navbar-nav > li.active {
 	background: #4eb9fc;
 }
@@ -175,4 +193,33 @@ nav .navbar-nav > li > a:hover {
 	.text-intro h1 {
 		font-size: 25px;
 	}
+}
+
+.thumbnail i{
+	font-size: 3em;
+	margin: 10% 0;
+}
+
+.thumbnail i.first {
+	animation: zoom 1s ease-in-out infinite alternate;
+}
+
+.thumbnail i.second {
+	animation: clock 1s ease-in-out infinite alternate;
+}
+
+
+.thumbnail i.first {
+	animation: zoom 1s ease-in-out infinite alternate;
+}
+
+.thumbnail i.third {
+	animation: move 2s ease-in-out infinite alternate;
+}
+
+
+.thumbnail h3 {
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 500;
 }
